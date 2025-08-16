@@ -1,34 +1,30 @@
 <!-- Header -->
-<h1>Hi there 👋</h1>
-<h3>AI × Security</h3>
+<h2>Hi there 👋</h2>
 
----
 ## Stats
 <p align="center">
   <!-- X -->
   <a href="https://x.com/tatu_arugo">
-    <img src="https://img.shields.io/badge/Follow_on_X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X"/>
+    <img src="https://img.shields.io/badge/Follow_on_X-000000?style=flat-square&logo=x&logoColor=white" />
   </a>
   <!-- Qiita -->
-  [![My Qiita posts](https://qiita-badge.apiapi.app/s/mikkame/posts.svg)](http://qiita.com/mikkame)
+  <a href="https://qiita.com/ta-061">
+    <img src="https://qiita-badge.apiapi.app/s/ta-061/posts.svg" alt="Qiita posts"/>
+  </a>
   <!-- AtCoder -->
   <a href="https://atcoder.jp/users/ta0920?contestType=algo">
-    <img src="https://badgen.org/img/atcoder/ta0920/rating/algorithm?style=flat&label=AtCoder&labelColor=1f1f1f" alt="AtCoder Rating"/>
+    <img src="https://badgen.org/img/atcoder/ta0920/rating/algorithm?style=flat-square&label=AtCoder" alt="AtCoder Rating"/>
   </a>
 </p>
+
 <p align="center">
-  <!-- 1) Profile Details -->
+  <!-- Profile Details -->
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=ta-061&theme=github_dark" width="700" alt="profile details"/>
 </p>
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)"  srcset="profile-3d-contrib/profile-night-rainbow.svg" width="700" />
-    <source media="(prefers-color-scheme: light)" srcset="profile-3d-contrib/profile-season-animate.svg" width="700" />
-    <img alt="3D contribution chart" src="profile-3d-contrib/profile-night-rainbow.svg" width="700"/>
-  </picture>
+  <img src="profile-3d-contrib/profile-night-rainbow.svg" width="700" alt="3D contribution chart"/>
 </p>
-<p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)"  srcset="output/metrics.base.svg" width="420" />
     <source media="(prefers-color-scheme: light)" srcset="output/metrics.base.svg" width="420" />
@@ -40,8 +36,6 @@
     <img alt="GitHub metrics details" src="output/details.svg" width="420"/>
   </picture>
 </p>
-
----
 
 ## 🛠 Tech Stack
 <p align="center">
