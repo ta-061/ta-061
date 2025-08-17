@@ -39,8 +39,8 @@
 
 ## 🛠 Tech Stack
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=python,cpp,cs,typescript,ruby,java,sql&theme=dark" />
+  <img src="https://skillicons.dev/icons?i=python,cpp,typescript,ruby,java,sql&theme=dark" />
 </p>
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=pytorch,flask,rails,react,unity,docker,aws,gcp,mysql&theme=dark" />
+  <img src="https://skillicons.dev/icons?i=pytorch,flask,rails,react,docker,aws,gcp,mysql&theme=dark" />
 </p>
