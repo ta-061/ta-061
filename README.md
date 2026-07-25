@@ -1,46 +1,69 @@
-<!-- Header -->
-<h2>Hi there 👋</h2>
-
-## Stats
 <p align="center">
-  <!-- X -->
+  <img src="./assets/profile-header.svg" width="100%" alt="Tatsuya — Security Research and Open Source" />
+</p>
+
+<p align="center">
+  Security researcher and open-source developer building tools around honeypots,<br />
+  LLM services, and Trusted Execution Environments.
+</p>
+
+<p align="center">
   <a href="https://x.com/tatu_arugo">
-    <img src="https://img.shields.io/badge/Follow_on_X-000000?style=flat-square&logo=x&logoColor=white" />
+    <img src="https://img.shields.io/badge/@tatu__arugo-0D1117?style=flat-square&logo=x&logoColor=E6EDF3&labelColor=0D1117" alt="X" />
   </a>
-  <!-- Qiita -->
+  &nbsp;
   <a href="https://qiita.com/ta-061">
-    <img src="https://qiita-badge.apiapi.app/s/ta-061/posts.svg" alt="Qiita posts"/>
+    <img src="https://img.shields.io/badge/Qiita-0D1117?style=flat-square&logo=qiita&logoColor=55C500&labelColor=0D1117" alt="Qiita" />
   </a>
-  <!-- AtCoder -->
+  &nbsp;
   <a href="https://atcoder.jp/users/ta0920?contestType=algo">
-    <img src="https://badgen.org/img/atcoder/ta0920/rating/algorithm?style=flat-square&label=AtCoder" alt="AtCoder Rating"/>
+    <img src="https://img.shields.io/badge/AtCoder-ta0920-0D1117?style=flat-square&labelColor=0D1117&color=0D1117" alt="AtCoder" />
   </a>
 </p>
 
-<p align="center">
-  <!-- Profile Details -->
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=ta-061&theme=github_dark" width="700" alt="profile details"/>
-</p>
+<br />
+
+## Featured OSS
+
+<sub>CURRENT PROJECT</sub>
+
+### [PromptPot](https://github.com/ta-061/promptpot)
+
+A multi-profile honeypot for exposed local LLM services including Ollama, LM Studio,
+vLLM, Gradio, and ComfyUI. It emulates common LLM API surfaces and records probes and
+submitted prompts — without running a model or executing attacker input.
+
+`Python`&nbsp; `Docker`&nbsp; `T-Pot`&nbsp; `Threat Intelligence`
+
+[Repository&nbsp;→](https://github.com/ta-061/promptpot) &nbsp;·&nbsp; [Project&nbsp;site&nbsp;→](https://promptpot.tatu-sec.dev)
+
+<br />
+
+## Published Research
+
+<sub>REPRODUCIBILITY ARTIFACT</sub>
+
+### [TEE Bad Partitioning LLM Artifact](https://github.com/ta-061/tee-bad-partitioning-llm-artifact)
+
+Artifact for presented research on the complementarity of rule-based and LLM-based
+bad-partitioning analysis in Trusted Applications.
+
+`Program Analysis`&nbsp; `LLM Security`&nbsp; `Trusted Execution Environments`
+
+[Repository&nbsp;→](https://github.com/ta-061/tee-bad-partitioning-llm-artifact)
+
+<br />
+
+<details>
+  <summary><b>&nbsp;Activity</b></summary>
+  <br />
+  <p align="center">
+    <img src="./profile-3d-contrib/profile-night-view.svg" width="100%" alt="Contribution graph" />
+  </p>
+</details>
+
+---
 
 <p align="center">
-  <img src="profile-3d-contrib/profile-night-rainbow.svg" width="700" alt="3D contribution chart"/>
-</p>
-  <picture>
-    <source media="(prefers-color-scheme: dark)"  srcset="output/metrics.base.svg" width="420" />
-    <source media="(prefers-color-scheme: light)" srcset="output/metrics.base.svg" width="420" />
-    <img alt="GitHub metrics" src="output/metrics.base.svg" width="420"/>
-  </picture>
-  <picture>
-    <source media="(prefers-color-scheme: dark)"  srcset="output/details.svg" width="420" />
-    <source media="(prefers-color-scheme: light)" srcset="output/details.svg" width="420" />
-    <img alt="GitHub metrics details" src="output/details.svg" width="420"/>
-  </picture>
-</p>
-
-## 🛠 Tech Stack
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=python,cpp,typescript,ruby,java,sql&theme=dark" />
-</p>
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=pytorch,flask,rails,react,docker,aws,gcp,mysql&theme=dark" />
+  <sub>PYTHON&nbsp;&nbsp;·&nbsp;&nbsp;C/C++&nbsp;&nbsp;·&nbsp;&nbsp;TYPESCRIPT&nbsp;&nbsp;·&nbsp;&nbsp;DOCKER&nbsp;&nbsp;·&nbsp;&nbsp;LINUX</sub>
 </p>

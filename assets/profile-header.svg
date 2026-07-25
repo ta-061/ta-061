@@ -1,0 +1,203 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="260" viewBox="0 0 1000 260" role="img" aria-labelledby="bannerTitle bannerDesc">
+  <title id="bannerTitle">Tatsuya — Security Research and Open Source</title>
+  <desc id="bannerDesc">Dark banner showing the name Tatsuya, focus areas, and an animated network graph representing traffic observed by honeypots.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B1018"/>
+      <stop offset=".55" stop-color="#0D1117"/>
+      <stop offset="1" stop-color="#0A0F1B"/>
+    </linearGradient>
+
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#A78BFA"/>
+    </linearGradient>
+
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22D3EE" stop-opacity=".45"/>
+      <stop offset=".5" stop-color="#94A3B8" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#A78BFA" stop-opacity=".45"/>
+    </linearGradient>
+
+    <radialGradient id="auroraCyan">
+      <stop offset="0" stop-color="#22D3EE" stop-opacity=".20"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="auroraViolet">
+      <stop offset="0" stop-color="#8B5CF6" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#8B5CF6" stop-opacity="0"/>
+    </radialGradient>
+
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="1.4" cy="1.4" r="1.1" fill="#8FA3BF" fill-opacity=".16"/>
+    </pattern>
+
+    <linearGradient id="dotFade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#000"/>
+      <stop offset=".45" stop-color="#555"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <mask id="dotMask">
+      <rect width="1000" height="260" fill="url(#dotFade)"/>
+    </mask>
+
+    <linearGradient id="scrim" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0A0E16" stop-opacity=".92"/>
+      <stop offset=".38" stop-color="#0A0E16" stop-opacity=".72"/>
+      <stop offset=".68" stop-color="#0A0E16" stop-opacity="0"/>
+    </linearGradient>
+
+    <filter id="softGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="3.5"/>
+    </filter>
+
+    <clipPath id="frame">
+      <rect width="1000" height="260" rx="20"/>
+    </clipPath>
+
+    <style>
+      .sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+      .mono { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; }
+
+      @keyframes driftA { 0%, 100% { transform: translate(0, 0); }   50% { transform: translate(-34px, 20px); } }
+      @keyframes driftB { 0%, 100% { transform: translate(0, 0); }   50% { transform: translate(28px, -16px); } }
+      @keyframes flow   { to { stroke-dashoffset: 0; } }
+      @keyframes ping   { 0% { transform: scale(1); opacity: .5; } 70%, 100% { transform: scale(3.6); opacity: 0; } }
+      @keyframes breathe{ 0%, 100% { opacity: .3; } 50% { opacity: 1; } }
+
+      .aurora-a { animation: driftA 26s ease-in-out infinite; }
+      .aurora-b { animation: driftB 34s ease-in-out infinite; }
+
+      .trace {
+        fill: none;
+        stroke: #67E8F9;
+        stroke-width: 1.6;
+        stroke-linecap: round;
+        stroke-dasharray: 9 91;
+        stroke-dashoffset: 100;
+        animation: flow 12s linear infinite;
+      }
+
+      .flow {
+        stroke: #22D3EE;
+        stroke-width: 1.6;
+        stroke-linecap: round;
+        fill: none;
+        stroke-dasharray: 13 87;
+        stroke-dashoffset: 100;
+        animation: flow 7s linear infinite;
+      }
+      .flow-2 { stroke: #A78BFA; animation-duration: 9s;  animation-delay: -3.2s; }
+      .flow-3 { animation-duration: 6s;  animation-delay: -1.4s; }
+      .flow-4 { stroke: #A78BFA; animation-duration: 11s; animation-delay: -6s; }
+
+      .ping   { animation: ping 4.5s cubic-bezier(.2, .6, .3, 1) infinite; }
+      .ping-2 { animation-delay: 1.5s; }
+      .ping-3 { animation-delay: 3s; }
+
+      .live   { animation: breathe 2.4s ease-in-out infinite; }
+      .prompt { animation: breathe 1.6s steps(1, end) infinite; }
+
+      @media (prefers-reduced-motion: reduce) {
+        .aurora-a, .aurora-b, .trace, .flow, .ping, .live, .prompt { animation: none; }
+        .ping, .trace { opacity: 0; }
+      }
+    </style>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1000" height="260" fill="url(#bg)"/>
+    <rect width="1000" height="260" fill="url(#dots)" mask="url(#dotMask)"/>
+
+    <g class="aurora-a">
+      <ellipse cx="856" cy="46" rx="300" ry="196" fill="url(#auroraCyan)"/>
+    </g>
+    <g class="aurora-b">
+      <ellipse cx="648" cy="266" rx="286" ry="178" fill="url(#auroraViolet)"/>
+    </g>
+
+    <rect width="1000" height="260" fill="url(#scrim)"/>
+
+    <!-- network graph -->
+    <g>
+      <g stroke="#64748B" stroke-opacity=".32" stroke-width="1.25" fill="none" stroke-linejoin="round">
+        <path d="M632 74 706 132 792 86 902 136 964 92"/>
+        <path d="M664 206 706 132 806 178 876 216 956 190"/>
+        <path d="M792 86 886 48 964 92"/>
+        <path d="M706 132 806 178 902 136"/>
+        <path d="M902 136 956 190"/>
+        <path d="M632 74 664 206"/>
+        <path d="M886 48 902 136"/>
+      </g>
+
+      <g filter="url(#softGlow)" opacity=".85">
+        <path class="flow"        pathLength="100" d="M632 74 706 132 792 86 902 136 964 92"/>
+        <path class="flow flow-2" pathLength="100" d="M664 206 706 132 806 178 876 216 956 190"/>
+        <path class="flow flow-3" pathLength="100" d="M792 86 886 48 964 92"/>
+        <path class="flow flow-4" pathLength="100" d="M706 132 806 178 902 136"/>
+      </g>
+      <g>
+        <path class="flow"        pathLength="100" d="M632 74 706 132 792 86 902 136 964 92"/>
+        <path class="flow flow-2" pathLength="100" d="M664 206 706 132 806 178 876 216 956 190"/>
+        <path class="flow flow-3" pathLength="100" d="M792 86 886 48 964 92"/>
+        <path class="flow flow-4" pathLength="100" d="M706 132 806 178 902 136"/>
+      </g>
+
+      <g transform="translate(706 132)">
+        <circle class="ping" r="4.5" fill="none" stroke="#22D3EE" stroke-width="1.2"/>
+        <circle r="4.5" fill="#22D3EE"/>
+      </g>
+      <g transform="translate(902 136)">
+        <circle class="ping ping-2" r="4.5" fill="none" stroke="#A78BFA" stroke-width="1.2"/>
+        <circle r="4.5" fill="#A78BFA"/>
+      </g>
+      <g transform="translate(806 178)">
+        <circle class="ping ping-3" r="4" fill="none" stroke="#22D3EE" stroke-width="1.2"/>
+        <circle r="4" fill="#67E8F9"/>
+      </g>
+
+      <g fill="#CBD5E1">
+        <circle cx="632" cy="74"  r="3.2"/>
+        <circle cx="664" cy="206" r="3.2"/>
+        <circle cx="792" cy="86"  r="3.6"/>
+        <circle cx="886" cy="48"  r="3.2"/>
+        <circle cx="876" cy="216" r="3.2"/>
+        <circle cx="964" cy="92"  r="3.2"/>
+        <circle cx="956" cy="190" r="3.2"/>
+      </g>
+    </g>
+
+    <!-- text -->
+    <g class="sans">
+      <g transform="translate(56 44)">
+        <rect width="238" height="28" rx="14" fill="#22D3EE" fill-opacity=".08" stroke="#22D3EE" stroke-opacity=".26"/>
+        <circle class="live" cx="17" cy="14" r="3.6" fill="#22D3EE"/>
+        <text x="31" y="18.5" fill="#A5F3FC" font-size="11.5" font-weight="600" letter-spacing="1.6">SECURITY × OPEN SOURCE</text>
+      </g>
+
+      <text x="56" y="136" fill="#F8FAFC" font-size="56" font-weight="700" letter-spacing="-1.6">Tatsuya</text>
+      <rect x="56" y="154" width="62" height="3.5" rx="1.75" fill="url(#accent)"/>
+
+      <text x="56" y="196" fill="#C4CFDD" font-size="18.5" font-weight="400">Honeypots · LLM Security · Trusted Execution Environments</text>
+
+      <g class="mono" font-size="13">
+        <text class="prompt" x="56" y="228" fill="#22D3EE" font-weight="600">❯</text>
+        <text x="73" y="228" fill="#7C8CA3" letter-spacing=".4">research / build / observe</text>
+      </g>
+    </g>
+
+  </g>
+
+  <!-- card edge, with a light tracing the perimeter -->
+  <g>
+    <path d="M20 .75H979.5A19.25 19.25 0 0 1 998.75 20V240A19.25 19.25 0 0 1 979.5 259.25H20A19.25 19.25 0 0 1 .75 240V20A19.25 19.25 0 0 1 20 .75Z"
+          fill="none" stroke="url(#edge)" stroke-width="1.5"/>
+    <g filter="url(#softGlow)" opacity=".7">
+      <path class="trace" pathLength="100"
+            d="M20 .75H979.5A19.25 19.25 0 0 1 998.75 20V240A19.25 19.25 0 0 1 979.5 259.25H20A19.25 19.25 0 0 1 .75 240V20A19.25 19.25 0 0 1 20 .75Z"/>
+    </g>
+    <path class="trace" pathLength="100"
+          d="M20 .75H979.5A19.25 19.25 0 0 1 998.75 20V240A19.25 19.25 0 0 1 979.5 259.25H20A19.25 19.25 0 0 1 .75 240V20A19.25 19.25 0 0 1 20 .75Z"/>
+  </g>
+</svg>
